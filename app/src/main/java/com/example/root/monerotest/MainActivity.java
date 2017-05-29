@@ -8,7 +8,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
     static {
-
+        System.loadLibrary("ssl");
+        System.loadLibrary("unbound");
+        System.loadLibrary("common");
+        System.loadLibrary("cryptonote_basic");
+        System.loadLibrary("ringct");
+        System.loadLibrary("blockchain_db");
         System.loadLibrary("native-lib");
 
     }
